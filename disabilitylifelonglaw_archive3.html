@@ -1,0 +1,2846 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장애인평생교육법 제정 투쟁 기록</title>
+    <meta name="description" content="장애인평생교육법 제정을 향한 4년 6개월의 투쟁 기록">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+      /* =========================================================
+      1. 색상·크기 설정
+      이 부분의 색상값을 바꾸면 전체 디자인이 함께 바뀝니다.
+      ========================================================= */
+      :root,
+      [data-theme="light"] {
+      --bg: #f4f0e6;
+      --surface: #fffdf8;
+      --surface-2: #ebe5d7;
+      --surface-3: #dfd7c8;
+      --text: #17231d;
+      --text-muted: #59645c;
+      --text-faint: #7a847d;
+      --text-inverse: #ffffff;
+      --primary: #075b3a;
+      --primary-hover: #043f28;
+      --primary-soft: #dce9e1;
+      --primary-deep: #023521;
+      --accent: #a83d2e;
+      --accent-hover: #7f2d22;
+      --accent-soft: #f0dcd6;
+      --gold: #ae7b13;
+      --gold-soft: #eee2c5;
+      --border: rgba(23, 35, 29, 0.14);
+      --border-strong: rgba(23, 35, 29, 0.25);
+      --shadow-sm:
+      0 1px 2px rgba(44, 35, 24, 0.05),
+      0 4px 12px rgba(44, 35, 24, 0.05);
+      --shadow-md:
+      0 2px 4px rgba(44, 35, 24, 0.06),
+      0 14px 38px rgba(44, 35, 24, 0.1);
+      --header-bg: rgba(244, 240, 230, 0.9);
+      --overlay: rgba(7, 20, 13, 0.82);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-xl: 32px;
+      --radius-full: 999px;
+      --content: 1120px;
+      --prose: 760px;
+      --transition:
+      220ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      [data-theme="dark"] {
+      --bg: #141815;
+      --surface: #1c211d;
+      --surface-2: #252c27;
+      --surface-3: #303832;
+      --text: #edf2ee;
+      --text-muted: #b5c0b8;
+      --text-faint: #8e9991;
+      --text-inverse: #112018;
+      --primary: #70c99c;
+      --primary-hover: #94dbb7;
+      --primary-soft: #253b30;
+      --primary-deep: #d0f1df;
+      --accent: #e18a78;
+      --accent-hover: #f0ab9d;
+      --accent-soft: #422b27;
+      --gold: #deb75e;
+      --gold-soft: #413a25;
+      --border: rgba(237, 242, 238, 0.13);
+      --border-strong: rgba(237, 242, 238, 0.24);
+      --shadow-sm:
+      0 1px 2px rgba(0, 0, 0, 0.22),
+      0 4px 12px rgba(0, 0, 0, 0.2);
+      --shadow-md:
+      0 2px 4px rgba(0, 0, 0, 0.25),
+      0 16px 44px rgba(0, 0, 0, 0.3);
+      --header-bg: rgba(20, 24, 21, 0.9);
+      --overlay: rgba(0, 0, 0, 0.88);
+      }
+      /* =========================================================
+      2. 초기화
+      ========================================================= */
+      *,
+      *::before,
+      *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      }
+      html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+      text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+      }
+      body {
+      min-width: 320px;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+      "Noto Sans KR",
+      "Apple SD Gothic Neo",
+      sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      transition:
+      background var(--transition),
+      color var(--transition);
+      }
+      img,
+      svg {
+      display: block;
+      max-width: 100%;
+      }
+      button,
+      input {
+      color: inherit;
+      font: inherit;
+      }
+      button {
+      border: 0;
+      cursor: pointer;
+      }
+      a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      }
+      h1,
+      h2,
+      h3 {
+      line-height: 1.1;
+      text-wrap: balance;
+      }
+      p {
+      text-wrap: pretty;
+      }
+      ::selection {
+      background: var(--primary);
+      color: #ffffff;
+      }
+      :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+      }
+      .skip-link {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      z-index: 9999;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-150%);
+      }
+      .skip-link:focus {
+      transform: translateY(0);
+      }
+      .container {
+      width: min(var(--content), calc(100% - 40px));
+      margin-inline: auto;
+      }
+      .prose {
+      width: min(var(--prose), 100%);
+      }
+      .section {
+      padding-block: clamp(72px, 9vw, 128px);
+      }
+      .section-tight {
+      padding-block: clamp(56px, 7vw, 88px);
+      }
+      /* =========================================================
+      3. 상단 스크롤 진행 표시
+      ========================================================= */
+      .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      width: 100%;
+      height: 4px;
+      background: transparent;
+      pointer-events: none;
+      }
+      .scroll-progress-bar {
+      width: 0;
+      height: 100%;
+      background: var(--accent);
+      transition: width 70ms linear;
+      }
+      /* =========================================================
+      4. 상단 메뉴
+      ========================================================= */
+      .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 500;
+      border-bottom: 1px solid transparent;
+      background: var(--header-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition:
+      border-color var(--transition),
+      box-shadow var(--transition);
+      }
+      .site-header.is-scrolled {
+      border-color: var(--border);
+      box-shadow: var(--shadow-sm);
+      }
+      .header-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      }
+      .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      min-width: 0;
+      color: var(--text);
+      font-weight: 800;
+      text-decoration: none;
+      }
+      .brand-mark {
+      width: 36px;
+      min-width: 36px;
+      color: var(--primary);
+      }
+      .brand-text {
+      overflow: hidden;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      }
+      .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      }
+      .desktop-nav a {
+      min-height: 44px;
+      padding: 10px 13px;
+      display: inline-flex;
+      align-items: center;
+      border-radius: var(--radius-full);
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition:
+      color var(--transition),
+      background var(--transition);
+      }
+      .desktop-nav a:hover,
+      .desktop-nav a.is-active {
+      background: var(--primary-soft);
+      color: var(--primary);
+      }
+      .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      }
+      .icon-button {
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: var(--surface);
+      color: var(--text);
+      transition:
+      background var(--transition),
+      color var(--transition),
+      border-color var(--transition),
+      transform var(--transition);
+      }
+      .icon-button:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-1px);
+      }
+      .icon-button:active {
+      transform: translateY(1px);
+      }
+      .icon-button svg {
+      width: 19px;
+      height: 19px;
+      }
+      /* =========================================================
+      5. 히어로
+      ========================================================= */
+      .hero {
+      position: relative;
+      min-height: calc(100svh - 72px);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background:
+      linear-gradient(115deg,
+      rgba(2, 53, 33, 0.98) 0%,
+      rgba(7, 91, 58, 0.92) 55%,
+      rgba(25, 103, 70, 0.84) 100%);
+      color: #ffffff;
+      isolation: isolate;
+      }
+      .hero.has-image {
+      background:
+      linear-gradient(100deg,
+      rgba(2, 33, 21, 0.94) 0%,
+      rgba(2, 50, 31, 0.79) 58%,
+      rgba(2, 50, 31, 0.5) 100%),
+      var(--hero-image) center / cover no-repeat;
+      }
+      .hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+      repeating-linear-gradient(90deg,
+      transparent 0,
+      transparent calc(20% - 1px),
+      rgba(255, 255, 255, 0.07) 20%);
+      content: "";
+      }
+      .hero::after {
+      position: absolute;
+      right: -12vw;
+      bottom: -30vw;
+      z-index: -1;
+      width: min(760px, 72vw);
+      aspect-ratio: 1;
+      border: 1px solid rgba(255, 255, 255, 0.19);
+      border-radius: 50%;
+      content: "";
+      }
+      .hero-inner {
+      width: 100%;
+      padding-block:
+      clamp(76px, 10vw, 130px) clamp(52px, 7vw, 90px);
+      }
+      .hero-kicker {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      }
+      .hero-kicker::before {
+      width: 42px;
+      height: 2px;
+      background: #f2b8a9;
+      content: "";
+      }
+      .hero h1 {
+      max-width: 980px;
+      color: #ffffff;
+      font-size: clamp(48px, 8.3vw, 112px);
+      font-weight: 900;
+      letter-spacing: -0.07em;
+      }
+      .hero h1 em {
+      display: block;
+      color: #ffd1c4;
+      font-family: "Song Myung", serif;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      }
+      .hero-description {
+      max-width: 720px;
+      margin-top: clamp(25px, 3vw, 40px);
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(17px, 1.6vw, 21px);
+      line-height: 1.8;
+      }
+      .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      }
+      .hero-button {
+      min-height: 48px;
+      padding: 12px 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      transition:
+      background var(--transition),
+      border-color var(--transition),
+      transform var(--transition);
+      }
+      .hero-button.primary {
+      border-color: #ffffff;
+      background: #ffffff;
+      color: #17452f;
+      }
+      .hero-button:hover {
+      border-color: #ffffff;
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+      }
+      .hero-button.primary:hover {
+      background: #f1eee7;
+      }
+      .hero-stats {
+      margin-top: clamp(44px, 7vw, 80px);
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid rgba(255, 255, 255, 0.24);
+      }
+      .hero-stat {
+      padding: 24px 22px 0 0;
+      }
+      .hero-stat strong {
+      display: block;
+      color: #ffffff;
+      font-size: clamp(23px, 2.7vw, 38px);
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.25;
+      }
+      .hero-stat span {
+      max-width: 170px;
+      margin-top: 7px;
+      display: block;
+      color: rgba(255, 255, 255, 0.67);
+      font-size: 13px;
+      line-height: 1.55;
+      }
+      /* =========================================================
+      6. 공통 제목
+      ========================================================= */
+      .section-kicker {
+      margin-bottom: 15px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      }
+      .section-title {
+      max-width: 900px;
+      color: var(--text);
+      font-size: clamp(36px, 5.5vw, 72px);
+      font-weight: 900;
+      letter-spacing: -0.055em;
+      }
+      .section-title em {
+      color: var(--primary);
+      font-family: "Song Myung", serif;
+      font-style: normal;
+      font-weight: 400;
+      }
+      .section-description {
+      max-width: 760px;
+      margin-top: 24px;
+      color: var(--text-muted);
+      font-size: clamp(17px, 1.5vw, 20px);
+      line-height: 1.85;
+      }
+      /* =========================================================
+      7. 법 소개
+      ========================================================= */
+      .intro-layout {
+      display: grid;
+      grid-template-columns:
+      minmax(0, 0.75fr) minmax(0, 1.25fr);
+      gap: clamp(40px, 7vw, 96px);
+      align-items: start;
+      }
+      .intro-number {
+      position: sticky;
+      top: 120px;
+      color: var(--primary);
+      font-family: "Song Myung", serif;
+      font-size: clamp(96px, 14vw, 190px);
+      line-height: 0.8;
+      opacity: 0.16;
+      }
+      .intro-copy p+p {
+      margin-top: 24px;
+      }
+      .intro-copy p {
+      color: var(--text);
+      font-size: clamp(18px, 1.8vw, 24px);
+      line-height: 1.9;
+      }
+      .intro-copy strong {
+      color: var(--primary);
+      }
+      .quote-card {
+      margin-top: 48px;
+      padding: clamp(28px, 4vw, 48px);
+      border-radius: var(--radius-lg);
+      background: var(--primary-deep);
+      color: #ffffff;
+      box-shadow: var(--shadow-md);
+      }
+      [data-theme="dark"] .quote-card {
+      color: #102419;
+      }
+      .quote-card blockquote {
+      font-family: "Song Myung", serif;
+      font-size: clamp(25px, 3.2vw, 42px);
+      line-height: 1.5;
+      }
+      .quote-card p {
+      margin-top: 18px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      }
+      [data-theme="dark"] .quote-card p {
+      color: rgba(16, 36, 25, 0.74);
+      }
+      /* =========================================================
+      8. 역사적 법적 근거
+      ========================================================= */
+      .history-strip {
+      background: var(--surface-2);
+      }
+      .history-grid {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid var(--border-strong);
+      border-bottom: 1px solid var(--border-strong);
+      }
+      .history-item {
+      position: relative;
+      min-height: 280px;
+      padding: 32px 26px 32px 0;
+      }
+      .history-item+.history-item {
+      padding-left: 26px;
+      border-left: 1px solid var(--border);
+      }
+      .history-year {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      }
+      .history-item h3 {
+      margin-top: 20px;
+      color: var(--text);
+      font-size: 22px;
+      letter-spacing: -0.035em;
+      }
+      .history-item p {
+      margin-top: 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.75;
+      }
+      /* =========================================================
+      9. 타임라인 도구
+      ========================================================= */
+      .timeline-section {
+      background: var(--bg);
+      }
+      .timeline-tools {
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+      margin-top: 44px;
+      padding: 14px;
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) auto;
+      gap: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--header-bg);
+      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      }
+      .search-box {
+      position: relative;
+      }
+      .search-box svg {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      width: 19px;
+      color: var(--text-faint);
+      transform: translateY(-50%);
+      pointer-events: none;
+      }
+      .search-box input {
+      width: 100%;
+      min-height: 48px;
+      padding: 11px 16px 11px 45px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--surface);
+      color: var(--text);
+      outline: 0;
+      }
+      .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+      }
+      .tool-buttons {
+      display: flex;
+      gap: 8px;
+      }
+      .tool-button {
+      min-height: 48px;
+      padding: 11px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 800;
+      white-space: nowrap;
+      }
+      .tool-button:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      }
+      .year-filters {
+      margin-top: 22px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+      }
+      .year-filter {
+      min-height: 44px;
+      padding: 9px 17px;
+      flex: 0 0 auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 800;
+      transition:
+      background var(--transition),
+      color var(--transition),
+      border-color var(--transition);
+      }
+      .year-filter:hover,
+      .year-filter.is-active {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #ffffff;
+      }
+      .result-status {
+      margin-top: 16px;
+      color: var(--text-muted);
+      font-size: 14px;
+      }
+      /* =========================================================
+      10. 연도별 기록
+      ========================================================= */
+      .timeline-container {
+      margin-top: 56px;
+      }
+      .year-section {
+      position: relative;
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: clamp(28px, 5vw, 72px);
+      padding-block: 50px;
+      border-top: 1px solid var(--border-strong);
+      }
+      .year-heading {
+      position: sticky;
+      top: 176px;
+      align-self: start;
+      }
+      .year-heading span {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      }
+      .year-heading h3 {
+      margin-top: 6px;
+      color: var(--text);
+      font-size: clamp(42px, 6vw, 68px);
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      }
+      .year-heading p {
+      margin-top: 12px;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+      }
+      .event-list {
+      display: grid;
+      gap: 14px;
+      }
+      .event-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      box-shadow: var(--shadow-sm);
+      transition:
+      border-color var(--transition),
+      box-shadow var(--transition),
+      transform var(--transition);
+      }
+      .event-card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-md);
+      }
+      .event-card[open] {
+      border-color: color-mix(in srgb,
+      var(--primary) 50%,
+      var(--border));
+      }
+      .event-summary {
+      min-height: 82px;
+      padding: 20px 22px;
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr) 42px;
+      gap: 18px;
+      align-items: center;
+      list-style: none;
+      cursor: pointer;
+      }
+      .event-summary::-webkit-details-marker {
+      display: none;
+      }
+      .event-date {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+      }
+      .event-heading-wrap {
+      min-width: 0;
+      }
+      .event-title {
+      color: var(--text);
+      font-size: clamp(17px, 1.55vw, 21px);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.5;
+      }
+      .event-tags {
+      margin-top: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      }
+      .event-tag {
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 800;
+      }
+      .event-toggle {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--surface-2);
+      color: var(--text);
+      transition:
+      background var(--transition),
+      color var(--transition),
+      transform var(--transition);
+      }
+      .event-card[open] .event-toggle {
+      background: var(--primary);
+      color: #ffffff;
+      transform: rotate(45deg);
+      }
+      .event-body {
+      padding: 0 22px 26px 132px;
+      }
+      .event-description {
+      max-width: 720px;
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.85;
+      }
+      .event-quote {
+      margin-top: 20px;
+      padding: 20px 22px;
+      border-radius: var(--radius-md);
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-family: "Song Myung", serif;
+      font-size: clamp(19px, 2vw, 25px);
+      line-height: 1.65;
+      }
+      .event-links {
+      margin-top: 21px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      }
+      .event-link {
+      min-height: 42px;
+      padding: 9px 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      }
+      .event-link:hover {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #ffffff;
+      }
+      /* =========================================================
+      11. 사진 갤러리
+      ========================================================= */
+      .event-gallery {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns:
+      repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+      gap: 10px;
+      }
+      .photo-button {
+      position: relative;
+      min-height: 220px;
+      overflow: hidden;
+      border: 0;
+      border-radius: var(--radius-md);
+      background: var(--surface-2);
+      cursor: zoom-in;
+      }
+      .photo-button img {
+      width: 100%;
+      height: 100%;
+      min-height: 220px;
+      object-fit: cover;
+      transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .photo-button:hover img {
+      transform: scale(1.035);
+      }
+      .photo-caption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 36px 14px 12px;
+      background: linear-gradient(transparent,
+      rgba(0, 0, 0, 0.76));
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: left;
+      }
+      .image-fallback {
+      min-height: 220px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-md);
+      background: var(--surface-2);
+      color: var(--text-muted);
+      font-size: 13px;
+      text-align: center;
+      }
+      .image-fallback strong {
+      color: var(--accent);
+      }
+      .empty-result {
+      padding: 80px 24px;
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      color: var(--text-muted);
+      text-align: center;
+      }
+      .empty-result h3 {
+      color: var(--text);
+      font-size: 24px;
+      }
+      .empty-result p {
+      margin-top: 8px;
+      }
+      /* =========================================================
+      12. 표결 결과
+      ========================================================= */
+      .result-section {
+      position: relative;
+      overflow: hidden;
+      background: var(--primary-deep);
+      color: #ffffff;
+      }
+      [data-theme="dark"] .result-section {
+      color: #102419;
+      }
+      .result-section::after {
+      position: absolute;
+      top: -340px;
+      right: -300px;
+      width: 720px;
+      height: 720px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 50%;
+      content: "";
+      }
+      .result-section .section-kicker {
+      color: #f4c0b2;
+      }
+      [data-theme="dark"] .result-section .section-kicker {
+      color: #8a3e31;
+      }
+      .result-section .section-title {
+      max-width: 900px;
+      color: inherit;
+      }
+      .result-section .section-description {
+      color: rgba(255, 255, 255, 0.73);
+      }
+      [data-theme="dark"] .result-section .section-description {
+      color: rgba(16, 36, 25, 0.72);
+      }
+      .vote-grid {
+      position: relative;
+      z-index: 1;
+      margin-top: 52px;
+      display: grid;
+      grid-template-columns: 1.4fr repeat(3, 1fr);
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      }
+      [data-theme="dark"] .vote-grid {
+      border-color: rgba(16, 36, 25, 0.25);
+      }
+      .vote-item {
+      padding: clamp(25px, 4vw, 44px) 24px;
+      }
+      .vote-item+.vote-item {
+      border-left: 1px solid rgba(255, 255, 255, 0.22);
+      }
+      [data-theme="dark"] .vote-item+.vote-item {
+      border-color: rgba(16, 36, 25, 0.22);
+      }
+      .vote-item strong {
+      display: block;
+      color: inherit;
+      font-size: clamp(42px, 6vw, 78px);
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+      }
+      .vote-item:first-child strong {
+      color: #ffd1c4;
+      }
+      [data-theme="dark"] .vote-item:first-child strong {
+      color: #843e31;
+      }
+      .vote-item span {
+      margin-top: 12px;
+      display: block;
+      color: rgba(255, 255, 255, 0.67);
+      font-size: 14px;
+      }
+      [data-theme="dark"] .vote-item span {
+      color: rgba(16, 36, 25, 0.66);
+      }
+      .law-dates {
+      margin-top: 46px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      }
+      .law-date-card {
+      padding: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.07);
+      }
+      [data-theme="dark"] .law-date-card {
+      border-color: rgba(16, 36, 25, 0.18);
+      background: rgba(16, 36, 25, 0.07);
+      }
+      .law-date-card span {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 13px;
+      font-weight: 800;
+      }
+      [data-theme="dark"] .law-date-card span {
+      color: rgba(16, 36, 25, 0.66);
+      }
+      .law-date-card strong {
+      margin-top: 8px;
+      display: block;
+      font-size: clamp(25px, 3vw, 38px);
+      font-weight: 900;
+      }
+      .countdown {
+      margin-top: 12px;
+      color: #ffd1c4;
+      font-size: 14px;
+      font-weight: 800;
+      }
+      [data-theme="dark"] .countdown {
+      color: #71362b;
+      }
+      /* =========================================================
+      13. 마지막 메시지
+      ========================================================= */
+      .closing {
+      background: var(--surface);
+      }
+      .closing-layout {
+      display: grid;
+      grid-template-columns:
+      minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: clamp(40px, 7vw, 90px);
+      align-items: center;
+      }
+      .closing-message {
+      margin-top: 32px;
+      color: var(--text);
+      font-family: "Song Myung", serif;
+      font-size: clamp(25px, 3.5vw, 45px);
+      line-height: 1.55;
+      }
+      .closing-copy {
+      padding: 32px;
+      border-radius: var(--radius-lg);
+      background: var(--primary-soft);
+      }
+      .closing-copy p {
+      color: var(--text-muted);
+      line-height: 1.9;
+      }
+      .closing-copy p+p {
+      margin-top: 18px;
+      }
+      .closing-copy strong {
+      color: var(--primary);
+      }
+      /* =========================================================
+      14. 푸터
+      ========================================================= */
+      .site-footer {
+      padding-block: 52px;
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+      }
+      .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: flex-end;
+      }
+      .footer-title {
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 900;
+      }
+      .footer-copy {
+      margin-top: 7px;
+      color: var(--text-muted);
+      font-size: 13px;
+      }
+      .footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      }
+      .footer-button {
+      min-height: 44px;
+      padding: 10px 16px;
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      }
+      .footer-button:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      }
+      /* =========================================================
+      15. 이미지 확대창
+      ========================================================= */
+      .image-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      padding: 28px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: var(--overlay);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      }
+      .image-modal.is-open {
+      display: flex;
+      }
+      .modal-content {
+      position: relative;
+      max-width: min(1200px, 100%);
+      max-height: calc(100vh - 56px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      .modal-content img {
+      max-width: 100%;
+      max-height: calc(100vh - 130px);
+      border-radius: var(--radius-md);
+      object-fit: contain;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+      }
+      .modal-caption {
+      margin-top: 14px;
+      color: #ffffff;
+      font-size: 14px;
+      text-align: center;
+      }
+      .modal-close {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #17231d;
+      box-shadow: var(--shadow-md);
+      }
+      /* =========================================================
+      16. 스크롤 애니메이션
+      ========================================================= */
+      .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition:
+      opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      }
+      /* =========================================================
+      17. 반응형
+      ========================================================= */
+      @media (max-width: 980px) {
+      .desktop-nav {
+      display: none;
+      }
+      .intro-layout {
+      grid-template-columns: 1fr;
+      }
+      .intro-number {
+      position: static;
+      font-size: 100px;
+      }
+      .history-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .history-item:nth-child(3) {
+      border-left: 0;
+      border-top: 1px solid var(--border);
+      }
+      .history-item:nth-child(4) {
+      border-top: 1px solid var(--border);
+      }
+      .year-section {
+      grid-template-columns: 130px minmax(0, 1fr);
+      }
+      .event-body {
+      padding-left: 22px;
+      }
+      .vote-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .vote-item:nth-child(3) {
+      border-top: 1px solid rgba(255, 255, 255, 0.22);
+      border-left: 0;
+      }
+      .vote-item:nth-child(4) {
+      border-top: 1px solid rgba(255, 255, 255, 0.22);
+      }
+      .closing-layout {
+      grid-template-columns: 1fr;
+      }
+      }
+      @media (max-width: 720px) {
+      .container {
+      width: min(100% - 28px, var(--content));
+      }
+      .header-inner {
+      min-height: 64px;
+      }
+      .brand-text {
+      max-width: 180px;
+      }
+      .hero {
+      min-height: calc(100svh - 64px);
+      }
+      .hero h1 {
+      font-size: clamp(44px, 15vw, 72px);
+      }
+      .hero-stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      row-gap: 26px;
+      }
+      .history-grid {
+      grid-template-columns: 1fr;
+      }
+      .history-item {
+      min-height: auto;
+      padding: 28px 0;
+      }
+      .history-item+.history-item,
+      .history-item:nth-child(3),
+      .history-item:nth-child(4) {
+      padding-left: 0;
+      border-top: 1px solid var(--border);
+      border-left: 0;
+      }
+      .timeline-tools {
+      top: 64px;
+      grid-template-columns: 1fr;
+      }
+      .tool-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      }
+      .year-section {
+      display: block;
+      padding-block: 40px;
+      }
+      .year-heading {
+      position: static;
+      margin-bottom: 24px;
+      }
+      .year-heading h3 {
+      font-size: 44px;
+      }
+      .event-summary {
+      padding: 18px;
+      grid-template-columns: 1fr 38px;
+      gap: 12px;
+      }
+      .event-date {
+      grid-column: 1 / -1;
+      }
+      .event-toggle {
+      grid-column: 2;
+      grid-row: 2;
+      }
+      .event-heading-wrap {
+      grid-column: 1;
+      grid-row: 2;
+      }
+      .event-body {
+      padding: 0 18px 22px;
+      }
+      .photo-button,
+      .photo-button img,
+      .image-fallback {
+      min-height: 190px;
+      }
+      .vote-grid {
+      grid-template-columns: 1fr 1fr;
+      }
+      .law-dates {
+      grid-template-columns: 1fr;
+      }
+      .footer-inner {
+      align-items: flex-start;
+      flex-direction: column;
+      }
+      .image-modal {
+      padding: 18px;
+      }
+      .modal-close {
+      top: 6px;
+      right: 6px;
+      }
+      }
+      @media (max-width: 420px) {
+      .brand-text {
+      max-width: 130px;
+      }
+      .header-actions .icon-button:first-child {
+      display: none;
+      }
+      .hero-stats {
+      grid-template-columns: 1fr 1fr;
+      }
+      .hero-stat strong {
+      font-size: 22px;
+      }
+      .hero-stat span {
+      font-size: 12px;
+      }
+      }
+      /* =========================================================
+      18. 동작 줄이기
+      ========================================================= */
+      @media (prefers-reduced-motion: reduce) {
+      html {
+      scroll-behavior: auto;
+      }
+      *,
+      *::before,
+      *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      }
+      .reveal {
+      opacity: 1;
+      transform: none;
+      }
+      }
+      /* =========================================================
+      19. 인쇄
+      ========================================================= */
+      @media print {
+      :root,
+      [data-theme="dark"] {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-2: #f4f4f4;
+      --text: #111111;
+      --text-muted: #444444;
+      --primary: #174d34;
+      --border: rgba(0, 0, 0, 0.18);
+      }
+      body {
+      background: #ffffff;
+      }
+      .site-header,
+      .scroll-progress,
+      .timeline-tools,
+      .year-filters,
+      .result-status,
+      .hero-actions,
+      .footer-actions,
+      .image-modal {
+      display: none !important;
+      }
+      .hero {
+      min-height: auto;
+      padding: 40px 0;
+      background: #174d34 !important;
+      }
+      .section {
+      padding-block: 42px;
+      }
+      .event-card {
+      break-inside: avoid;
+      box-shadow: none;
+      }
+      .event-card:not([open]) .event-body {
+      display: block;
+      }
+      .reveal {
+      opacity: 1;
+      transform: none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress-bar" id="scroll-progress-bar">
+      </div>
+    </div>
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="페이지 처음으로 이동">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M9 36V13L24 6L39 13V36L24 43L9 36Z" stroke="currentColor" stroke-width="3" />
+          <path d="M16 32V18L24 14L32 18V32L24 36L16 32Z" fill="currentColor" />
+          <path d="M24 14V36" stroke="white" stroke-width="2" />
+        </svg>
+        <span class="brand-text">장애인평생교육법 제정 기록</span>
+        </a>
+        <nav class="desktop-nav" aria-label="주요 메뉴">
+          <a href="#about">법 소개</a>
+          <a href="#why">법 제정 필요성</a>
+          <a href="#timeline">활동 기록</a>
+          <a href="#result">제정 성과</a>
+          <a href="#next">새로운 시작</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" id="share-button" type="button" aria-label="페이지 공유" title="페이지 공유">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="18" cy="5" r="3">
+              </circle>
+              <circle cx="6" cy="12" r="3">
+              </circle>
+              <circle cx="18" cy="19" r="3">
+              </circle>
+              <path d="M8.6 10.7 15.4 6.3">
+              </path>
+              <path d="m8.6 13.3 6.8 4.4">
+              </path>
+            </svg>
+          </button>
+          <button class="icon-button" id="theme-button" type="button" aria-label="어두운 화면으로 전환" title="화면 색상 전환">
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <!-- =======================================================
+      표지
+      ======================================================= -->
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <p class="hero-kicker" id="hero-kicker">
+            2021.04.20 — 2025.10.26
+          </p>
+          <h1>
+            배움은<br>멈추지<br>않는다
+            <em>장애인평생교육법</em>
+          </h1>
+          <p class="hero-description">
+            기자회견과 결의대회, 국회 면담과 공청회, 농성,
+            엽서쓰기와 삭발 투쟁까지.<br>장애인 당사자와 현장이
+            직접 만들어 온 4년 6개월의 시간을 기록합니다.
+          </p>
+          <div class="hero-actions">
+            <a class="hero-button primary" href="#timeline">
+            활동 기록 보기
+            </a>
+            <a class="hero-button" href="https://ncpspd.oopy.io/disabilitylifelonglaw" target="_blank" rel="noopener noreferrer">
+            기존 기록 페이지
+            </a>
+          </div>
+          <div class="hero-stats" aria-label="법 제정 주요 기록">
+            <div class="hero-stat">
+              <strong>4년 6개월</strong>
+              <span>첫 법안 발의에서 본회의 의결까지</span>
+            </div>
+            <div class="hero-stat">
+              <strong data-count="4098">0</strong>
+              <span>권리 팔만대장경 엽서</span>
+            </div>
+            <div class="hero-stat">
+              <strong data-count="257">0</strong>
+              <span>국회 본회의 찬성 의원</span>
+            </div>
+            <div class="hero-stat">
+              <strong>2027.05.12</strong>
+              <span>장애인평생교육법 시행일</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =======================================================
+      법 소개
+      ======================================================= -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="intro-layout">
+            <div class="intro-number" aria-hidden="true">法</div>
+            <div class="intro-copy reveal">
+              <p class="section-kicker">ABOUT THE LAW</p>
+              <h2 class="section-title">
+                장애인의 배움을
+                <em>법률로 보장하다</em>
+              </h2>
+              <p>
+                장애를 가졌다는 이유로 학교에 가지 못했습니다.<br>
+                학령기에 형성된 교육 격차는 성인기에 이르러
+                해소되지 못한 채 고착되었습니다.
+              </p>
+              <p>
+                평생교육은 모든 시민의 권리이지만 제도와 예산,
+                전문 인력이 부족한 현실 속에서 많은 장애인 당사자는
+                교육 기회에서 멀어져 왔습니다.
+              </p>
+              <p>
+                <strong>「장애인평생교육법」</strong>은 장애인의
+                평생교육 참여권을 보장하고, 자립생활과 사회참여를
+                촉진하기 위한 국가와 지방자치단체의 책무를 규정한
+                독립 법률입니다.
+              </p>
+              <div class="quote-card">
+                <blockquote>
+                  “장애인평생교육법 제정 투쟁은 사회적 기준을 이동시키는 투쟁”
+                </blockquote>
+                <p>장애인평생교육법 제정 운동의 요구</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =======================================================
+      필요성
+      ======================================================= -->
+      <section class="section history-strip" id="why">
+        <div class="container">
+          <p class="section-kicker reveal">법 제정 필요성</p>
+          <h2 class="section-title reveal">
+            독립 법률이 필요했던
+            <em>이유</em>
+          </h2>
+          <p class="section-description reveal">
+            기존 법률에 일부 근거가 마련됐지만<br>전달체계, 전문 인력,
+            재정과 국가·지방자치단체의 책임은 충분하지 않았습니다.<br>
+            장애인 당사자가 지역사회에서 배울 권리를<br>실질적으로
+            보장할 별도의 법적 기반이 필요했습니다.
+          </p>
+          <div class="history-grid reveal">
+            <article class="history-item">
+              <span class="history-year">2007</span>
+              <h3>특수교육법 제정</h3>
+              <p>
+                「장애인 등에 대한 특수교육법」에 장애인 평생교육의
+                법적 근거가 처음 명시됐습니다.
+              </p>
+            </article>
+            <article class="history-item">
+              <span class="history-year">2014</span>
+              <h3>발달장애인법 제정</h3>
+              <p>
+                「발달장애인 권리보장 및 지원에 관한 법률」에
+                발달장애인 평생교육 근거가 마련됐습니다.
+              </p>
+            </article>
+            <article class="history-item">
+              <span class="history-year">2016</span>
+              <h3>평생교육법 개정</h3>
+              <p>
+                장애인 평생교육 관련 내용이 평생교육법으로 일원화되고
+                지원체계 구축 근거가 마련됐습니다.
+              </p>
+            </article>
+            <article class="history-item">
+              <span class="history-year">2017—2020</span>
+              <h3>장애인평생교육법 제정 필요성</h3>
+              <p>
+                기관 부족, 낮은 참여율, 미흡한 정책과 예산을 해결하기
+                위해 장애인평생교육법 제정 운동이 본격화됐습니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- =======================================================
+      활동 기록
+      ======================================================= -->
+      <section class="section timeline-section" id="timeline">
+        <div class="container">
+          <p class="section-kicker reveal">4년 6개월 활동 기록</p>
+          <h2 class="section-title reveal">
+            거리와 국회에서 만든
+            <em>변화의 기록</em>
+          </h2>
+          <p class="section-description reveal">
+            연도를 선택하거나 사건명을 검색해 기록을 확인할 수 있습니다.<br>
+            각 사건을 누르면 설명, 사진과 관련 자료가 펼쳐집니다.
+          </p>
+          <div class="timeline-tools">
+            <label class="search-box">
+              <span style="
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              ">
+              활동 기록 검색
+              </span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8">
+                </circle>
+                <path d="m21 21-4.35-4.35">
+                </path>
+              </svg>
+              <input id="timeline-search" type="search" placeholder="예: 공청회, 농성, 삭발, 법안 발의" autocomplete="off">
+            </label>
+            <div class="tool-buttons">
+              <button class="tool-button" id="expand-button" type="button">
+                모두 펼치기
+              </button>
+              <button class="tool-button" id="reset-button" type="button">
+                초기화
+              </button>
+            </div>
+          </div>
+          <div class="year-filters" id="year-filters" aria-label="연도 선택">
+          </div>
+          <p class="result-status" id="result-status" aria-live="polite">
+          </p>
+          <div class="timeline-container" id="timeline-container">
+          </div>
+        </div>
+      </section>
+      <!-- =======================================================
+      표결 결과
+      ======================================================= -->
+      <section class="section result-section" id="result">
+        <div class="container">
+          <p class="section-kicker reveal">2025년 10월 26일</p>
+          <h2 class="section-title reveal">
+            마침내 국회 본회의를
+            통과했습니다
+          </h2>
+          <p class="section-description reveal">
+            장애인평생교육법이 처음 발의된 지 4년 6개월 만에
+            국회 본회의에서 가결됐습니다.
+          </p>
+          <div class="vote-grid reveal">
+            <div class="vote-item">
+              <strong data-count="257">0</strong>
+              <span>찬성</span>
+            </div>
+            <div class="vote-item">
+              <strong data-count="0">0</strong>
+              <span>반대</span>
+            </div>
+            <div class="vote-item">
+              <strong data-count="6">0</strong>
+              <span>기권</span>
+            </div>
+            <div class="vote-item">
+              <strong data-count="263">0</strong>
+              <span>재석</span>
+            </div>
+          </div>
+          <div class="law-dates reveal">
+            <article class="law-date-card">
+              <span>법률 공포</span>
+              <strong>2025.11.11</strong>
+            </article>
+            <article class="law-date-card">
+              <span>법률 시행</span>
+              <strong>2027.05.12</strong>
+              <p class="countdown" id="countdown">
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- =======================================================
+      마무리
+      ======================================================= -->
+      <section class="section closing" id="next">
+        <div class="container closing-layout">
+          <div class="reveal">
+            <p class="section-kicker">새로운 시작</p>
+            <h2 class="section-title">
+              법은 끝이 아니라
+              <em>새로운 시작</em>입니다
+            </h2>
+            <p class="closing-message">
+              함께 만든 법을 실제 권리로 만들기 위해,
+              예산과 전달체계, 지역의 제도를
+              함께 바꾸어가야 합니다.
+            </p>
+          </div>
+          <div class="closing-copy reveal">
+            <p>
+              <strong>
+              장애인의 평생교육 권리가 권리답게 보장받고,<br>중증장애인이 교육을 통해 시설이 아닌 지역사회에서<br>함께 살아갈 수 있는 사회를 만들어나가기 위해<br>전국장애인야학협의회는 계속 투쟁하겠습니다.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-title">
+            사단법인 전국장애인야학협의회
+          </p>
+          <p class="footer-copy">
+            2026 장애인평생교육법 제정 투쟁 기록
+          </p>
+        </div>
+        <div class="footer-actions">
+          <button class="footer-button" type="button" onclick="window.print()">
+            기록 인쇄하기
+          </button>
+          <a class="footer-button" href="#top">
+          처음으로
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- 이미지 확대 모달 -->
+    <div class="image-modal" id="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-caption">
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close" type="button" aria-label="사진 확대창 닫기">
+          ×
+        </button>
+        <img id="modal-image" src="" alt="">
+        <p class="modal-caption" id="modal-caption">
+        </p>
+      </div>
+    </div>
+    <script>
+      /* =========================================================
+      수정 안내
+      =========================================================
+      1. 표지 사진을 넣으려면 SETTINGS.heroImage를 수정합니다.
+      heroImage: "assets/대표사진.jpg"
+      2. 사건 사진은 EVENTS 안의 images 배열에 넣습니다.
+      images: [
+      {
+      src: "assets/2025-03-04-01.jpg",
+      alt: "장애인평생교육법 제정을 촉구하며 삭발하는 모습",
+      caption: "2025년 3월 4일 삭발 투쟁"
+      }
+      ]
+      3. 사진 폴더 구조 예시
+      disability-law-record.html
+      assets/
+      2025-03-04-01.jpg
+      2025-10-26-01.jpg
+      4. 사건을 추가하려면 EVENTS 배열에 객체를 복사해서 추가합니다.
+      ========================================================= */
+      const SETTINGS = {
+      heroImage: "",
+      targetDate: "2027-05-12T00:00:00+09:00"
+      };
+      /* =========================================================
+      사건 데이터
+      아래 내용만 수정하면 타임라인이 자동으로 바뀝니다.
+      ========================================================= */
+      const EVENTS = [{
+      year: "2020",
+      date: "04.01",
+      title: "장애인평생교육 지원 강화 및 법 제정 촉구 기자회견",
+      tags: ["기자회견", "법 제정"],
+      description: "코로나19 한복판에서 장애인평생교육 지원 강화와 독립적인 장애인평생교육법 제정을 요구하는 활동이 본격적으로 시작됐습니다.",
+      quote: "",
+      images: [],
+      links: [{
+      label: "관련 기사",
+      url: "https://www.beminor.com/news/articleView.html?idxno=14525"
+      }]
+      },
+      {
+      year: "2020",
+      date: "06.09",
+      title: "교육부장관 면담 투쟁 선포 결의대회",
+      tags: ["결의대회", "교육부"],
+      description: "장애인평생교육에 대한 교육부의 책임 있는 대책과 교육부장관 면담을 요구하는 결의대회를 진행했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2020",
+      date: "07.01",
+      title: "장애인평생교육은 지역사회 통합입니다 전동행진 사전대회",
+      tags: ["전동행진"],
+      description: "장애인평생교육이 분리된 교육이 아니라 지역사회 통합을 실현하는 권리임을 알리기 위해 전동행진에서 사진대회를 진행했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2020",
+      date: "08.20",
+      title: "장애인평생교육법 제정 필요성 및 법안 쟁점 토론회",
+      tags: ["토론회", "법안"],
+      description: "장애인평생교육법의 필요성과 주요 내용, 제정 과정에서 검토해야 할 쟁점을 논의했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2020",
+      date: "08.27",
+      title: "교육부는 장애인평생교육법 제정에 조속히 나서라",
+      tags: ["성명서", "교육부"],
+      description: "교육부에 장애인평생교육법 제정을 위한 책임 있는 행동을 촉구하는 성명서를 발표했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "04.10",
+      title: "장애인교육권 양대법안 제·개정 촉구 결의대회",
+      tags: ["결의대회", "교육권"],
+      description: "「장애인 등에 대한 특수교육법」 개정과 「장애인평생교육법」 제정을 함께 요구했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "04.20",
+      title: "장애인평생교육법 첫 발의 기자회견",
+      tags: ["발의", "국회"],
+      description: "장애인차별철폐투쟁의 날에 국회 본관 앞에서 장애인평생교육법 발의 기자회견을 진행했습니다.",
+      quote: "장애인에게 평생교육은 권리입니다.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "06.01",
+      title: "장애인을 위한 독자적 평생교육법 열린좌담회",
+      tags: ["좌담회", "평생교육"],
+      description: "별도 법률이 분리교육을 조장한다는 주장에 맞서, 기존 평생교육 체계가 장애인을 배제해온 현실과 독립 법률의 필요성을 논의했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "07.01",
+      title: "장애인평생교육법 연내 제정 농성 선포",
+      tags: ["농성", "연내 제정"],
+      description: "장애인평생교육법의 연내 제정을 요구하며 장기 농성과 국회 대응 활동을 시작했습니다.",
+      quote: "장애인평생교육법 제정 투쟁은 사회적 기준을 이동시키는 투쟁이다.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "08.20",
+      title: "장애인교육권 양대법안 제·개정 촉구 온라인 결의대회",
+      tags: ["결의대회"],
+      description: "특수교육법 개정과 장애인평생교육법 제정을 요구하는 온라인 결의대회를 진행했습니다.",
+      quote: "장애인교육권을 인정하지 않았던 국회와 정부를 향해 법안을 통과시키라고 요구할 것이다.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "09.24",
+      title: "유은혜 교육부장관 면담",
+      tags: ["면담", "교육부"],
+      description: "장애인평생교육법 제정과 장애인 평생교육 지원 확대를 요구하며 교육부장관과 면담했습니다.",
+      quote: "당시 교육부장관은 장애인평생교육법을 임기 내 제정하겠다고 약속했습니다.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2021",
+      date: "11.17",
+      title: "Disability Pride 행진",
+      tags: ["행진", "국회"],
+      description: "국회에 장애인평생교육법 연내 제정을 촉구하며 거리 행진을 진행했습니다.",
+      quote: "국회는 장애인평생교육법을 연내 제정하라.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2022",
+      date: "01월",
+      title: "혜화역 출근길 선전전",
+      tags: ["선전전", "지하철"],
+      description: "새해에도 장애인평생교육법 제정 필요성을 시민들에게 알리는 출근길 선전전을 이어갔습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2022",
+      date: "02.04",
+      title: "장애인평생교육법 재발의 및 성명서 발표",
+      tags: ["재발의", "법안"],
+      description: "조해진 국회의원 대표발의로 장애인평생교육법이 다시 발의됐습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2022",
+      date: "03.31",
+      title: "Disability Pride 행진",
+      tags: ["행진", "교육권"],
+      description: "장애인평생교육법과 특수교육법을 즉시 제정·개정할 것을 요구하며 행진했습니다.",
+      quote: "지금 당장 장애인평생교육법과 특수교육법을 제·개정하라.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2022",
+      date: "04.14",
+      title: "4월 임시국회에서 장애인평생교육법 제정하라",
+      tags: ["행진", "국회"],
+      description: "4월 임시국회에서 장애인교육권 관련 법률을 처리할 것을 촉구했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2022",
+      date: "10.13",
+      title: "제2회 장애인평생교육법 제정 페스티벌",
+      tags: ["결의대회"],
+      description: "장애인평생교육법 제정 필요성을 국회에 알리는 페스티벌을 진행했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "01.30",
+      title: "혜화역 출근길 선전전 271일차",
+      tags: ["선전전", "지하철"],
+      description: "혜화역 출근길 선전전에서 장애인평생교육법을 주제로 선전전을 진행했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "02.16",
+      title: "국회 교육위원회 심의 촉구 긴급 농성",
+      tags: ["농성", "교육위원회"],
+      description: "법안 심사가 지연되자 국회 교육위원회의 즉각적인 논의를 요구하며 긴급 농성에 돌입했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "02.23",
+      title: "긴급 농성 결과보고 및 교육부장관 면담 촉구",
+      tags: ["기자회견"],
+      description: "21일간 이어진 국회 앞 긴급 농성의 결과를 보고하고 이주호 교육부장관 면담을 촉구했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "05.17",
+      title: "국회 장애인평생교육법 공청회",
+      tags: ["공청회", "국회"],
+      description: "국회에서 장애인평생교육법의 필요성과 주요 쟁점을 공식적으로 논의했습니다.",
+      quote: "22년의 외침, 법 발의 2년. 이제는 제정되어야 한다.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "05.25",
+      title: "장애인평생교육법 제정을 위한 목요현장수업",
+      tags: ["현장수업", "교육"],
+      description: "장애인평생교육법 제정을 촉구하며 국회의사당역에서 장애인야학 현장수업을 진행했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "05.26",
+      title: "발의 2년 만에 교육위원회 법안소위 첫 상정",
+      tags: ["법안소위", "국회"],
+      description: "장애인평생교육법안이 발의된 지 2년 만에 국회 교육위원회 법안심사소위원회에 처음 상정되어 논의됐습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "06.02",
+      title: "이주호 교육부장관 따라잡기 투쟁",
+      tags: ["교육부", "긴급행동"],
+      description: "교육부가 장애인평생교육법 제정에 책임 있게 나설 것을 촉구하며 교육부장관 면담을 요구했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2023",
+      date: "11.13",
+      title: "21대 국회 임기 내 제정 촉구 엽서 전달",
+      tags: ["엽서", "국회"],
+      description: "장애인평생교육법 제정을 요구하는 장애인야학 학생들의 엽서 1,018장을 국회에 전달했습니다.",
+      quote: "21대 국회는 임기 내 장애인평생교육법을 제정하라.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2024",
+      date: "05.28",
+      title: "21대 국회 마지막 날 기자회견",
+      tags: ["기자회견", "21대 국회"],
+      description: "21대 국회 임기 만료로 법안이 폐기될 위기에 놓인 상황에서 권리입법을 촉구하는 기자회견을 진행했습니다.",
+      quote: "차별국회를 권리국회로! 국회는 책임을 다하라!",
+      images: [],
+      links: []
+      },
+      {
+      year: "2024",
+      date: "11.07",
+      title: "방송통신고등학교 특수교육과정 적용 촉구 긴급행동",
+      tags: ["긴급행동"],
+      description: "방송통신고등학교에 특수교육과정을 적용하고 장애인의 교육권을 보장할 것을 요구했습니다.",
+      quote: "성인 중증장애인도 고등학교에 가고 싶습니다",
+      images: [],
+      links: []
+      },
+      {
+      year: "2024",
+      date: "12.10",
+      title: "22대 국회 장애인평생교육법 세 번째 발의",
+      tags: ["발의", "22대 국회"],
+      description: "진선미 국회의원 대표발의로 장애인평생교육법안이 국회에 정식 접수되고 교육위원회 심사가 다시 시작됐습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2025",
+      date: "01.09",
+      title: "22대 국회 장애인평생교육법 공청회",
+      tags: ["공청회", "22대 국회"],
+      description: "22대 국회에서 장애인평생교육법 제정 필요성과 법안 내용을 논의하는 공청회가 열렸습니다.",
+      quote: "별도 법률 제정은 평생교육 체제를 분리하는 것이 아니라<br>기존 체제를 더 확장하는 작업이다.",
+      images: [],
+      links: [{
+      label: "공청회 관련 기사",
+      url: "https://www.beminor.com/news/articleView.html?idxno=27420"
+      }]
+      },
+      {
+      year: "2025",
+      date: "03.04",
+      title: "「장애인평생교육법」 제정 촉구 23명 삭발 투쟁 및 권리 팔만대장경 선포 결의대회",
+      tags: ["삭발", "팔만대장경"],
+      description: "국회가 4월 안에 장애인평생교육법을 제정할 것을 요구하며 23명이 삭발하고 권리 팔만대장경 제작 농성 투쟁을 선포했습니다.",
+      quote: "오늘 머리카락을 잘라낸 건 차별의 역사를 잘라낸 것이다.",
+      images: [],
+      links: []
+      },
+      {
+      year: "2025",
+      date: "03.14",
+      title: "장애인평생교육법 제정 촉구 권리 팔만대장경 제작 농성 투쟁 보고대회",
+      tags: ["농성", "엽서"],
+      description: "장애인평생교육법 제정을 촉구하며 전국에서 모은 4,098장의 엽서와 농성 투쟁의 경과를 보고했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2025",
+      date: "04.20",
+      title: "장애인평생교육권 선전전",
+      tags: ["420", "선전전"],
+      description: "장애인차별철폐의 날을 맞아 장애인의 평생교육권과 법 제정 필요성을 알리는 선전전을 진행했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2025",
+      date: "07.04",
+      title: "교육부 면담",
+      tags: ["교육부", "면담"],
+      description: "장애인평생교육법 제정과 법률 시행을 위한 전달체계와 예산 지원 필요성을 교육부에 요구했습니다.",
+      quote: "",
+      images: [],
+      links: []
+      },
+      {
+      year: "2025",
+      date: "09.25",
+      title: "장애인평생교육법 즉각 제정 촉구 기자회견",
+      tags: ["기자회견", "본회의"],
+      description: "법제사법위원회를 통과한 법안의 본회의 처리가 연기되자 즉각적인 본회의 상정과 제정을 요구했습니다.",
+      quote: "",
+      images: [],
+      links: [{
+      label: "관련 기사",
+      url: "https://www.beminor.com/news/articleView.html?idxno=28615"
+      }]
+      },
+      {
+      year: "2025",
+      date: "10.26",
+      title: "국회 본회의 의결 — 장애인평생교육법 제정",
+      tags: ["본회의", "법률 제정"],
+      description: "오후 4시 40분, 재석 의원 263명 중 257명 찬성, 0명 반대, 6명 기권으로 장애인평생교육법이 국회 본회의를 통과했습니다.",
+      quote: "4년 6개월의 긴 여정 끝에 장애인평생교육법이 제정되다.",
+      images: [],
+      links: [{
+      label: "본회의 통과 기사",
+      url: "https://www.beminor.com/news/articleView.html?idxno=28831"
+      }]
+      },
+      {
+      year: "2025",
+      date: "10.26",
+      title: "장애인평생교육법 제정 환영 기자회견",
+      tags: ["기자회견"],
+      description: "법 제정을 환영하는 동시에 예산 확보와 전달체계 강화, 시행령 마련과 현장 중심 정책을 위한 새로운 투쟁을 선언했습니다.",
+      quote: "이제는 법 제정을 넘어 예산의 문제를 해결하고 법의 전달체계를 강화해 나가야 한다.",
+      images: [],
+      links: [{
+      label: "환영 기자회견 기사",
+      url: "https://www.beminor.com/news/articleView.html?idxno=28834"
+      }]
+      }
+      ];
+      const YEAR_DESCRIPTIONS = {
+      "2020": "독립 법률 제정 요구가 본격화되다",
+      "2021": "첫 법안 발의와 연내 제정 농성",
+      "2022": "지하철, 국회와 거리에서 투쟁을 이어가다",
+      "2023": "법안소위 첫 상정과 21일간의 긴급농성",
+      "2024": "22대 국회에서 다시 시작된 입법 활동",
+      "2025": "삭발과 농성을 거쳐 마침내 법률 제정"
+      };
+      /* =========================================================
+      기본 설정 적용
+      ========================================================= */
+      const hero = document.querySelector(".hero");
+      if (SETTINGS.heroImage.trim()) {
+      hero.classList.add("has-image");
+      hero.style.setProperty(
+      "--hero-image",
+      `url("${SETTINGS.heroImage}")`
+      );
+      }
+      /* =========================================================
+      타임라인 렌더링
+      ========================================================= */
+      const timelineContainer =
+      document.getElementById("timeline-container");
+      const yearFilters =
+      document.getElementById("year-filters");
+      const searchInput =
+      document.getElementById("timeline-search");
+      const resultStatus =
+      document.getElementById("result-status");
+      const expandButton =
+      document.getElementById("expand-button");
+      const resetButton =
+      document.getElementById("reset-button");
+      const years = [...new Set(EVENTS.map((event) => event.year))];
+      let selectedYear = "all";
+      let allExpanded = false;
+      function escapeHtml(value = "") {
+      return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+      }
+      function renderYearFilters() {
+      const buttons = [
+      `<button
+      class="year-filter is-active"
+      type="button"
+      data-year="all"
+      >전체</button>`
+      ];
+      years.forEach((year) => {
+      buttons.push(`
+      <button
+        class="year-filter"
+        type="button"
+        data-year="${escapeHtml(year)}"
+        >${escapeHtml(year)}년</button>
+        `);
+        });
+        yearFilters.innerHTML = buttons.join("");
+        }
+        function buildEventLinks(links = []) {
+        if (!links.length) return "";
+        return `
+        <div class="event-links">
+          ${links.map((link) => `
+          <a
+          class="event-link"
+          href="${escapeHtml(link.url)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          ${escapeHtml(link.label)}
+          <span aria-hidden="true">↗</span>
+          </a>
+          `).join("")}
+        </div>
+        `;
+        }
+        function buildGallery(images = []) {
+        if (!images.length) return "";
+        return `
+        <div class="event-gallery">
+          ${images.map((image) => `
+          <button
+            class="photo-button"
+            type="button"
+            data-full-image="${escapeHtml(image.src)}"
+            data-image-alt="${escapeHtml(image.alt || "")}"
+            data-image-caption="${escapeHtml(
+            image.caption || image.alt || ""
+            )}"
+            aria-label="사진 크게 보기: ${escapeHtml(
+            image.alt || image.caption || "기록 사진"
+            )}"
+            >
+            <img
+            src="${escapeHtml(image.src)}"
+            alt="${escapeHtml(image.alt || "")}"
+            loading="lazy"
+            decoding="async"
+            onerror="handleImageError(this)"
+            >
+            ${
+            image.caption
+            ? `<span class="photo-caption">
+            ${escapeHtml(image.caption)}
+            </span>`
+            : ""
+            }
+          </button>
+          `).join("")}
+        </div>
+        `;
+        }
+        function buildEventCard(event, index) {
+        const tags = (event.tags || [])
+        .map(
+        (tag) =>
+        `<span class="event-tag">${escapeHtml(tag)}</span>`
+        )
+        .join("");
+        return `
+        <details
+          class="event-card reveal"
+          data-event-index="${index}"
+          >
+          <summary class="event-summary">
+            <time class="event-date">
+            ${escapeHtml(event.date)}
+            </time>
+            <div class="event-heading-wrap">
+              <h4 class="event-title">
+                ${escapeHtml(event.title)}
+              </h4>
+              ${
+              tags
+              ? `<div class="event-tags">${tags}</div>`
+              : ""
+              }
+            </div>
+            <span class="event-toggle" aria-hidden="true">
+            +
+            </span>
+          </summary>
+          <div class="event-body">
+            <p class="event-description">
+              ${escapeHtml(event.description)}
+            </p>
+            ${
+            event.quote
+            ? `<blockquote class="event-quote">
+            “${escapeHtml(event.quote)}”
+          </blockquote>`
+          : ""
+          }
+          ${buildGallery(event.images)}
+          ${buildEventLinks(event.links)}
+        </div>
+      </details>
+      `;
+      }
+      function getFilteredEvents() {
+      const keyword = searchInput.value.trim().toLowerCase();
+      return EVENTS.filter((event) => {
+      const matchesYear =
+      selectedYear === "all" ||
+      event.year === selectedYear;
+      const searchableText = [
+      event.year,
+      event.date,
+      event.title,
+      event.description,
+      event.quote,
+      ...(event.tags || [])
+      ]
+      .join(" ")
+      .toLowerCase();
+      const matchesKeyword = !keyword || searchableText.includes(keyword);
+      return matchesYear && matchesKeyword;
+      });
+      }
+      function renderTimeline() {
+      const filteredEvents = getFilteredEvents();
+      if (!filteredEvents.length) {
+      timelineContainer.innerHTML = `
+      <div class="empty-result">
+        <h3>검색 결과가 없습니다</h3>
+        <p>다른 연도나 검색어를 선택해 주세요.</p>
+      </div>
+      `;
+      resultStatus.textContent = "검색 결과 0건";
+      return;
+      }
+      const grouped = {};
+      filteredEvents.forEach((event) => {
+      if (!grouped[event.year]) {
+      grouped[event.year] = [];
+      }
+      grouped[event.year].push(event);
+      });
+      timelineContainer.innerHTML = Object.keys(grouped)
+      .sort()
+      .map((year) => {
+      const yearEvents = grouped[year];
+      return `
+      <section
+        class="year-section"
+        aria-labelledby="year-${year}"
+        >
+        <div class="year-heading">
+          <span>YEAR</span>
+          <h3 id="year-${year}">
+            ${year}
+          </h3>
+          <p>
+            ${escapeHtml(
+            YEAR_DESCRIPTIONS[year] || ""
+            )}
+          </p>
+        </div>
+        <div class="event-list">
+          ${yearEvents
+          .map((event) => {
+          const originalIndex = EVENTS.indexOf(event);
+          return buildEventCard(
+          event,
+          originalIndex
+          );
+          })
+          .join("")}
+        </div>
+      </section>
+      `;
+      })
+      .join("");
+      resultStatus.textContent =
+      `전체 ${EVENTS.length}개 기록 중 ` +
+      `${filteredEvents.length}개를 표시하고 있습니다.`;
+      allExpanded = false;
+      expandButton.textContent = "모두 펼치기";
+      setRevealEffects();
+      }
+      yearFilters.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-year]");
+      if (!button) return;
+      selectedYear = button.dataset.year;
+      yearFilters
+      .querySelectorAll(".year-filter")
+      .forEach((item) => {
+      item.classList.toggle(
+      "is-active",
+      item === button
+      );
+      });
+      renderTimeline();
+      });
+      searchInput.addEventListener("input", renderTimeline);
+      expandButton.addEventListener("click", () => {
+      const cards =
+      timelineContainer.querySelectorAll(".event-card");
+      allExpanded = !allExpanded;
+      cards.forEach((card) => {
+      card.open = allExpanded;
+      });
+      expandButton.textContent =
+      allExpanded ? "모두 접기" : "모두 펼치기";
+      });
+      resetButton.addEventListener("click", () => {
+      selectedYear = "all";
+      searchInput.value = "";
+      yearFilters
+      .querySelectorAll(".year-filter")
+      .forEach((button) => {
+      button.classList.toggle(
+      "is-active",
+      button.dataset.year === "all"
+      );
+      });
+      renderTimeline();
+      });
+      /* =========================================================
+      이미지 오류 처리
+      ========================================================= */
+      window.handleImageError = function(image) {
+      const source = image.getAttribute("src") || "";
+      const parent = image.closest(".photo-button");
+      const fallback = document.createElement("div");
+      fallback.className = "image-fallback";
+      const strong = document.createElement("strong");
+      strong.textContent = "사진 파일을 확인해 주세요";
+      const text = document.createElement("span");
+      text.textContent = source;
+      fallback.append(strong, text);
+      if (parent) {
+      parent.replaceWith(fallback);
+      } else {
+      image.replaceWith(fallback);
+      }
+      };
+      /* =========================================================
+      사진 확대
+      ========================================================= */
+      const imageModal =
+      document.getElementById("image-modal");
+      const modalImage =
+      document.getElementById("modal-image");
+      const modalCaption =
+      document.getElementById("modal-caption");
+      const modalClose =
+      document.getElementById("modal-close");
+      let lastFocusedElement = null;
+      timelineContainer.addEventListener("click", (event) => {
+      const photoButton =
+      event.target.closest(".photo-button");
+      if (!photoButton) return;
+      lastFocusedElement = photoButton;
+      modalImage.src =
+      photoButton.dataset.fullImage || "";
+      modalImage.alt =
+      photoButton.dataset.imageAlt || "";
+      modalCaption.textContent =
+      photoButton.dataset.imageCaption || "";
+      imageModal.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      modalClose.focus();
+      });
+      function closeImageModal() {
+      imageModal.classList.remove("is-open");
+      document.body.style.overflow = "";
+      modalImage.src = "";
+      if (lastFocusedElement) {
+      lastFocusedElement.focus();
+      }
+      }
+      modalClose.addEventListener(
+      "click",
+      closeImageModal
+      );
+      imageModal.addEventListener("click", (event) => {
+      if (event.target === imageModal) {
+      closeImageModal();
+      }
+      });
+      document.addEventListener("keydown", (event) => {
+      if (
+      event.key === "Escape" &&
+      imageModal.classList.contains("is-open")
+      ) {
+      closeImageModal();
+      }
+      });
+      /* =========================================================
+      화면 테마
+      ========================================================= */
+      const themeButton =
+      document.getElementById("theme-button");
+      const moonIcon = `
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+        >
+        <path
+          d="M21 12.79A9 9 0 1 1 11.21 3
+          7 7 0 0 0 21 12.79Z"
+          >
+        </path>
+      </svg>
+      `;
+      const sunIcon = `
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+        >
+        <circle cx="12" cy="12" r="4">
+        </circle>
+        <path d="M12 2v2">
+        </path>
+        <path d="M12 20v2">
+        </path>
+        <path d="m4.93 4.93 1.42 1.42">
+        </path>
+        <path d="m17.66 17.66 1.41 1.41">
+        </path>
+        <path d="M2 12h2">
+        </path>
+        <path d="M20 12h2">
+        </path>
+        <path d="m6.34 17.66-1.41 1.41">
+        </path>
+        <path d="m19.07 4.93-1.41 1.41">
+        </path>
+      </svg>
+      `;
+      function getInitialTheme() {
+      try {
+      const savedTheme =
+      localStorage.getItem("law-record-theme");
+      if (
+      savedTheme === "light" ||
+      savedTheme === "dark"
+      ) {
+      return savedTheme;
+      }
+      } catch (error) {
+      // 저장 기능을 사용할 수 없는 환경에서는 시스템 설정 사용
+      }
+      return window.matchMedia(
+      "(prefers-color-scheme: dark)"
+      ).matches ?
+      "dark" :
+      "light";
+      }
+      function applyTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const isDark = theme === "dark";
+      themeButton.innerHTML =
+      isDark ? sunIcon : moonIcon;
+      themeButton.setAttribute(
+      "aria-label",
+      isDark ?
+      "밝은 화면으로 전환" :
+      "어두운 화면으로 전환"
+      );
+      }
+      let currentTheme = getInitialTheme();
+      applyTheme(currentTheme);
+      themeButton.addEventListener("click", () => {
+      currentTheme =
+      currentTheme === "dark" ?
+      "light" :
+      "dark";
+      applyTheme(currentTheme);
+      try {
+      localStorage.setItem(
+      "law-record-theme",
+      currentTheme
+      );
+      } catch (error) {
+      // 저장할 수 없어도 테마 전환 자체는 유지
+      }
+      });
+      /* =========================================================
+      공유
+      ========================================================= */
+      document
+      .getElementById("share-button")
+      .addEventListener("click", async () => {
+      const shareData = {
+      title: document.title,
+      text: "장애인평생교육법 제정 투쟁 기록",
+      url: window.location.href
+      };
+      if (navigator.share) {
+      try {
+      await navigator.share(shareData);
+      } catch (error) {
+      // 사용자가 공유창을 닫은 경우
+      }
+      return;
+      }
+      try {
+      await navigator.clipboard.writeText(
+      window.location.href
+      );
+      alert("페이지 주소를 복사했습니다.");
+      } catch (error) {
+      window.prompt(
+      "아래 주소를 복사해 주세요.",
+      window.location.href
+      );
+      }
+      });
+      /* =========================================================
+      스크롤 진행 표시
+      ========================================================= */
+      const progressBar =
+      document.getElementById("scroll-progress-bar");
+      const siteHeader =
+      document.getElementById("site-header");
+      function updateScrollState() {
+      const scrollTop =
+      window.scrollY ||
+      document.documentElement.scrollTop;
+      const scrollHeight =
+      document.documentElement.scrollHeight -
+      window.innerHeight;
+      const progress =
+      scrollHeight > 0 ?
+      (scrollTop / scrollHeight) * 100 :
+      0;
+      progressBar.style.width = `${progress}%`;
+      siteHeader.classList.toggle(
+      "is-scrolled",
+      scrollTop > 10
+      );
+      }
+      window.addEventListener(
+      "scroll",
+      updateScrollState, {
+      passive: true
+      }
+      );
+      updateScrollState();
+      /* =========================================================
+      스크롤 등장 효과
+      ========================================================= */
+      let revealObserver = null;
+      function setRevealEffects() {
+      const elements =
+      document.querySelectorAll(
+      ".reveal:not([data-reveal-ready])"
+      );
+      if (
+      window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+      ).matches
+      ) {
+      elements.forEach((element) => {
+      element.classList.add("is-visible");
+      element.dataset.revealReady = "true";
+      });
+      return;
+      }
+      if (!("IntersectionObserver" in window)) {
+      elements.forEach((element) => {
+      element.classList.add("is-visible");
+      element.dataset.revealReady = "true";
+      });
+      return;
+      }
+      if (!revealObserver) {
+      revealObserver = new IntersectionObserver(
+      (entries) => {
+      entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+      entry.target.classList.add(
+      "is-visible"
+      );
+      revealObserver.unobserve(
+      entry.target
+      );
+      }
+      });
+      }, {
+      threshold: 0.08,
+      rootMargin: "0px 0px -8% 0px"
+      }
+      );
+      }
+      elements.forEach((element) => {
+      element.dataset.revealReady = "true";
+      revealObserver.observe(element);
+      });
+      }
+      /* =========================================================
+      숫자 애니메이션
+      ========================================================= */
+      const countedElements =
+      document.querySelectorAll("[data-count]");
+      function animateNumber(element) {
+      if (element.dataset.counted === "true") {
+      return;
+      }
+      element.dataset.counted = "true";
+      const target =
+      Number(element.dataset.count) || 0;
+      const duration = 1100;
+      const startTime = performance.now();
+      function update(currentTime) {
+      const progress = Math.min(
+      (currentTime - startTime) / duration,
+      1
+      );
+      const eased =
+      1 - Math.pow(1 - progress, 4);
+      const value = Math.round(target * eased);
+      element.textContent =
+      value.toLocaleString("ko-KR");
+      if (progress < 1) {
+      requestAnimationFrame(update);
+      }
+      }
+      requestAnimationFrame(update);
+      }
+      if ("IntersectionObserver" in window) {
+      const countObserver =
+      new IntersectionObserver(
+      (entries) => {
+      entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+      animateNumber(entry.target);
+      countObserver.unobserve(
+      entry.target
+      );
+      }
+      });
+      }, {
+      threshold: 0.5
+      }
+      );
+      countedElements.forEach((element) => {
+      countObserver.observe(element);
+      });
+      } else {
+      countedElements.forEach(animateNumber);
+      }
+      /* =========================================================
+      시행일까지 남은 기간
+      ========================================================= */
+      function updateCountdown() {
+      const countdown =
+      document.getElementById("countdown");
+      const now = new Date();
+      const targetDate =
+      new Date(SETTINGS.targetDate);
+      const difference =
+      targetDate.getTime() - now.getTime();
+      if (Number.isNaN(targetDate.getTime())) {
+      countdown.textContent = "";
+      return;
+      }
+      if (difference <= 0) {
+      countdown.textContent =
+      "장애인평생교육법이 시행됐습니다.";
+      return;
+      }
+      const days = Math.ceil(
+      difference / (1000 * 60 * 60 * 24)
+      );
+      countdown.textContent =
+      `시행일까지 ${days.toLocaleString("ko-KR")}일`;
+      }
+      updateCountdown();
+      /* =========================================================
+      상단 메뉴 현재 위치 표시
+      ========================================================= */
+      const navLinks =
+      document.querySelectorAll(
+      ".desktop-nav a"
+      );
+      const sections = [
+      "about",
+      "why",
+      "timeline",
+      "result",
+      "next"
+      ]
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+      if ("IntersectionObserver" in window) {
+      const sectionObserver =
+      new IntersectionObserver(
+      (entries) => {
+      entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((link) => {
+      link.classList.toggle(
+      "is-active",
+      link.getAttribute("href") ===
+      `#${entry.target.id}`
+      );
+      });
+      });
+      }, {
+      rootMargin: "-35% 0px -55% 0px",
+      threshold: 0
+      }
+      );
+      sections.forEach((section) => {
+      sectionObserver.observe(section);
+      });
+      }
+      /* =========================================================
+      최초 실행
+      ========================================================= */
+      renderYearFilters();
+      renderTimeline();
+      setRevealEffects();
+    </script>
+  </body>
+</html>
